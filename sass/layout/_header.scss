@@ -1,0 +1,18 @@
+@use "../utilities/extends";
+
+
+.indexHeader {
+    background-image: url(../img/indexHeaderBackground.jpg);
+    position: relative;
+   @extend .backgroundHeaders; 
+}
+.oscurecer-fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.229);
+}
+
+.indexHeaderContenedor{
+    @extend .d-flexBasico
+}
