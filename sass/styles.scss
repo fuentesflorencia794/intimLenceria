@@ -1,8 +1,72 @@
-@use "./layout/header";
+@use "./layout/header" as header;
+@use "./layout/footer" as footer;
+@use "./layout/main" as main;
 
-*{
+* {
     font-family: "Poppins", sans-serif !important;
-}   
-.colorPrimario{
+}
+
+.colorPrimario {
     color: rgb(185, 100, 157);
+}
+
+.instagram-section {
+    max-width: 800px;
+    margin: 50px auto;
+    /* Margin externo (Box Model) para separar */
+    padding: 30px;
+    /* Padding interno (Box Model) para dar aire */
+    background-color: white;
+    /* Fondo blanco */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+
+
+    h2 {
+        color: #ad1457;
+        /* Tu color rosa oscuro */
+        margin-bottom: 15px;
+        /* Separación debajo del título (Margin - Box Model) */
+    }
+
+    p {
+        margin-bottom: 10px;
+        /* Separación entre párrafos (Margin - Box Model) */
+    }
+}
+
+/* Estilos para el enlace sencillo */
+.instagram-link {
+    display: inline-block;
+    color: #f06292;
+    /* Tu color rosa fuerte */
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.instagram-link:hover {
+    color: #d81b60;
+    /* Rosa más oscuro al pasar el mouse */
+    text-decoration: underline;
+    /* Subrayado elegante */
+}
+
+.text-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+
+
+h2 {
+    color: #ad1457;
+    margin-bottom: 15px;
+}
 }
