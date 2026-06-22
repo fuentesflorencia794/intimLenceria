@@ -1,5 +1,5 @@
 @use "../utilities/extends";
-@use "../utilities/variables";
+@use "../utilities/variables" as variables;
 
 .indexHeader {
     background-image: url(../img/indexHeaderBackground.jpg);
@@ -15,7 +15,7 @@
 }
 
 .logo {
-    max-width: 220px;
+    max-width: 150px;
     border-radius: 50%;
     margin-bottom: 5rem;
     border: 3px solid WHITE;
@@ -29,11 +29,12 @@
     @extend .d-flexBasico
 }
 
-.colorPrimario{
+.colorPrimario {
     color: variables.$color-principal;
-}   
+}
+
 .botonCompra {
-   background-color: rgb(240, 98, 146);
+    background-color: rgb(240, 98, 146);
     color: white;
     font-weight: bold;
     width: 100%;
