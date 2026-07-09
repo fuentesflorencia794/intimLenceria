@@ -1,4 +1,5 @@
 @use "../utilities/variables" as variables;
+@use "../utilities/extends" as extends;
 
 .section-title {
     text-align: center;
@@ -6,3 +7,13 @@
     margin-bottom: 30px;
     color: variables.$color-principal;
 }
+
+.animacionImagenes {
+    @extend .imagenAnimacion;
+
+    &:hover {
+       transform: translateY(-8px) scale(1.02);
+    }
+}
+
+

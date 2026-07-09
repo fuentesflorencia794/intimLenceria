@@ -12,6 +12,10 @@
   height: 100vh;
 }
 
+.imagenAnimacion, .animacionImagenes {
+  transition: 0.4s;
+}
+
 .indexHeader {
   background-image: url(../img/indexHeaderBackground.jpg);
   position: relative;
@@ -25,7 +29,7 @@
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 220px;
   border-radius: 50%;
   margin-bottom: 5rem;
   border: 3px solid WHITE;
@@ -80,7 +84,6 @@
   /* Centra y da margen abajo */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
-
 .footer-social p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
@@ -126,6 +129,10 @@
   font-size: 1.5rem;
   margin-bottom: 30px;
   color: rgb(240, 98, 146);
+}
+
+.animacionImagenes:hover {
+  transform: translateY(-8px) scale(1.02);
 }
 
 * {
