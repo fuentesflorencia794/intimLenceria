@@ -71,11 +71,13 @@
 }
 
 .footer-social {
-  background-color: #ffffff; /* Fondo blanco puro */
+  background-color: #ffffff;
+  /* Fondo blanco puro */
   border-radius: 12px;
   padding: 2rem;
   max-width: 500px;
-  margin: 0 auto 3rem; /* Centra y da margen abajo */
+  margin: 0 auto 3rem;
+  /* Centra y da margen abajo */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
@@ -86,17 +88,21 @@
 }
 
 .instagram-link {
-  color: #f06292; /* Rosa de la marca */
+  color: #f06292;
+  /* Rosa de la marca */
   font-weight: bold;
   font-size: 1.2rem;
   text-decoration: none;
-  border-bottom: 2px solid transparent; /* Preparación para el hover */
+  border-bottom: 2px solid transparent;
+  /* Preparación para el hover */
   transition: all 0.3s ease;
 }
 
 .instagram-link:hover {
-  border-bottom: 2px solid #f06292; /* Línea rosa inferior elegante al pasar el mouse */
-  color: #d81b60; /* Rosa más oscuro al pasar el ratón */
+  border-bottom: 2px solid #f06292;
+  /* Línea rosa inferior elegante al pasar el mouse */
+  color: #d81b60;
+  /* Rosa más oscuro al pasar el ratón */
 }
 
 .footer-credits {
@@ -105,7 +111,6 @@
   padding-top: 1.5rem;
   color: #777;
 }
-
 .footer-credits a {
   color: #f06292;
   text-decoration: none;
