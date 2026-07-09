@@ -134,6 +134,9 @@
 .animacionImagenes:hover {
   transform: translateY(-8px) scale(1.02);
 }
+.animacionImagenes {
+  object-fit: cover;
+}
 
 * {
   font-family: "Poppins", sans-serif !important;
