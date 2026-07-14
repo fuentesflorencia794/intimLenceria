@@ -2,6 +2,7 @@
 @use "./layout/footer" as footer;
 @use "./layout/main" as main;
 
+
 * {
     font-family: "Poppins", sans-serif !important;
 }
@@ -71,3 +72,38 @@
     }
 }
 
+@media (min-width: 500px) {
+  #carouselExample {
+    max-width: 480px;      // Achicamos un poco el carrusel para que no ocupe toda la pantalla
+    margin: 0 auto;        // Lo centramos
+  }
+ 
+  .carousel-inner img {
+    height: 500px;         // Le fijamos una buena altura para la foto vertical
+    object-fit: contain;   // Evita que se corte el conjunto de lencería
+    background-color: #fafafa; // Un fondo muy sutil por si la foto no cubre todo el ancho
+  }
+}
+
+// ==========================================
+// DESKTOP (Pantallas grandes - desde 800px)
+// ==========================================
+
+@media (min-width: 800px) {
+  // 1. Fondo de la sección
+  .coleccion-bg {
+    background: #fff0f3;
+    padding: 4rem 0;
+  }
+
+  // 2. Tarjeta del Carrusel y sus elementos internos
+  #carouselExample {
+    max-width: 600px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    margin: 0 auto;
+
+  }
+}

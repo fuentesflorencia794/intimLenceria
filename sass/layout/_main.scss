@@ -1,6 +1,13 @@
 @use "../utilities/variables" as variables;
 @use "../utilities/extends" as extends;
 
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(53%) sepia(81%) saturate(1637%) hue-rotate(313deg) brightness(97%) contrast(94%);
+}
+
 .section-title {
     text-align: center;
     font-size: 1.5rem;
@@ -10,11 +17,9 @@
 
 .animacionImagenes {
     @extend .imagenAnimacion;
-
     &:hover {
        transform: translateY(-8px) scale(1.02);
     }
-     object-fit: cover;
 }
 
 
