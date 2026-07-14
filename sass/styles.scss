@@ -79,9 +79,9 @@
   }
  
   .carousel-inner img {
-    height: 500px;         // Le fijamos una buena altura para la foto vertical
-    object-fit: contain;   // Evita que se corte el conjunto de lencería
-    background-color: #fafafa; // Un fondo muy sutil por si la foto no cubre todo el ancho
+    height: 500px;         // fijo una buena altura para la foto vertical
+    object-fit: contain;   // Para que no se corte el conjunto de lencería
+    background-color: #fafafa; //  fondo muy sutil por si la foto no cubre todo el ancho
   }
 }
 
@@ -90,20 +90,33 @@
 // ==========================================
 
 @media (min-width: 800px) {
-  // 1. Fondo de la sección
   .coleccion-bg {
     background: #fff0f3;
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
 
-  // 2. Tarjeta del Carrusel y sus elementos internos
   #carouselExample {
-    max-width: 600px;
+    max-width: 950px; // Tarjeta más ancha
     background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 3rem;
     margin: 0 auto;
+
+    img {
+      height: 500px;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+    .carousel-control-prev { 
+      left: 15px; 
+      right: auto;
+    }
+    
+    .carousel-control-next { 
+      right: 15px; 
+      left: auto; 
+    }
 
   }
 }
