@@ -1,6 +1,7 @@
 @use "./layout/header" as header;
 @use "./layout/footer" as footer;
 @use "./layout/main" as main;
+@use "./layout/mq" as mq;
 
 
 * {
@@ -72,51 +73,3 @@
     }
 }
 
-@media (min-width: 500px) {
-  #carouselExample {
-    max-width: 480px;      // Achicamos un poco el carrusel para que no ocupe toda la pantalla
-    margin: 0 auto;        // Lo centramos
-  }
- 
-  .carousel-inner img {
-    height: 500px;         // fijo una buena altura para la foto vertical
-    object-fit: contain;   // Para que no se corte el conjunto de lencería
-    background-color: #fafafa; //  fondo muy sutil por si la foto no cubre todo el ancho
-  }
-}
-
-// ==========================================
-// DESKTOP (Pantallas grandes - desde 800px)
-// ==========================================
-
-@media (min-width: 800px) {
-  .coleccion-bg {
-    background: #fff0f3;
-    padding: 5rem 0;
-  }
-
-  #carouselExample {
-    max-width: 950px; // Tarjeta más ancha
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    padding: 3rem;
-    margin: 0 auto;
-
-    img {
-      height: 500px;
-      object-fit: contain;
-      border-radius: 12px;
-    }
-    .carousel-control-prev { 
-      left: 15px; 
-      right: auto;
-    }
-    
-    .carousel-control-next { 
-      right: 15px; 
-      left: auto; 
-    }
-
-  }
-}
