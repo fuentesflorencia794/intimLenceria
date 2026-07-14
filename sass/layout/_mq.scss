@@ -2,10 +2,10 @@
 // TABLET (Pantallas medianas - desde 500px)
 // ==========================================
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   #carouselExample {
-    max-width: 480px;      // Achicamos un poco el carrusel para que no ocupe toda la pantalla
-    margin: 0 auto;        // Lo centramos
+    max-width: 480px;      // Achico un poco el carrusel para que no ocupe toda la pantalla
+    margin: 0 auto;        // Lo centro
   }
  
   .carousel-inner img {
@@ -19,7 +19,7 @@
 // DESKTOP (Pantallas grandes - desde 800px)
 // ==========================================
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .coleccion-bg {
     background: #fff0f3;
     padding: 5rem 0;
